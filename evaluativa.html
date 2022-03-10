@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modulo evaluativo</title>
+	<style type="text/css">
+	.b{
+		position: absolute;
+		top: 85%;
+		left: 30%;
+		width: 11%;
+		height: 9%;
+		background-color: #E5CEFF;
+		font-family: Gungsuh;
+		font-size: 145%;
+		text-align: center;
+		align-items: center;
+		 justify-content: center;
+	}
+	.bc{
+		position: absolute;
+		top: 85%;
+		left: 44.5%;
+		width: 11%;
+		height: 9%;
+		background-color: #E5CEFF;
+		font-family: Gungsuh;
+		font-size: 145%;
+		text-align: center;
+		align-items: center;
+		 justify-content: center;
+	}
+	.bd{
+		position: absolute;
+		top: 85%;
+		left: 59%;
+		width: 11%;
+		height: 9%;
+		background-color: #E5CEFF;
+		font-family: Gungsuh;
+		font-size: 145%;
+		text-align: center;
+		align-items: center;
+		 justify-content: center;
+	}
+
+		.cuadro{
+			position: absolute;
+			top: 34%;
+			left: 37%;
+			height: 200px;
+			width: 350px;
+			background-color: #E5E8E8;
+		}
+		.ppa{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 270px;
+			height: 30px;
+			background-color: #A2D9CE;
+		
+		}
+		.pa{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: Courier New;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+
+		.ssa{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 270px;
+			height: 30px;
+			background-color: #E8DAEF;
+		
+		}
+		.sa{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: Courier New;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+	
+	.tta{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 270px;
+			height: 30px;
+			background-color: #AED6F1;
+		
+		}
+		.ta{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: Courier New;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+
+		.cca{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 270px;
+			height: 30px;
+			background-color: #F5B7B1;
+		
+		}
+		.ca{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: Courier New;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+
+		.rr{
+			font-family: Courier New;
+				font-size: 20px;
+		}
+
+		.tit{
+			position: absolute;
+			font-size: 36px;
+			top: 5%;
+			left: 37%;
+			font-family: Courier New;
+		}
+		.tit2{
+			position: absolute;
+			font-size: 20px;
+			top: 10.5%;
+			left: 39%;
+			font-family: Courier New;
+		}
+	</style>
+</head>
+
+<body onload="recar()" background="fondoo.jpg">
+	<script>
+	    	function recar() 
+	    	{
+    		nal=parseInt((Math.random() * (5-1) +1));
+    		console.log(nal);
+    		if (nal==1)
+    		 {
+             pal.style.display="block";
+    		}
+    		if (nal==2) 
+    		{
+    			sal.style.display="block";
+    		}
+    		if (nal==3)
+    		 {
+             ter.style.display="block";
+    		}
+    		if (nal==4) 
+    		{
+    			cal.style.display="block";
+    		}
+    	}
+</script>
+
+
+<div class="tit">Módulo evaluativo</div>
+
+<div class="tit2">Situaciones aleatorias</div>
+<div class="cuadro"></div>
+
+<div class="pa" id="pal">
+	<div class="ppa">Recuerda la ecuación:</div>
+	<div class="ecua">an=a1+(n-1)*d
+		<br>
+		<br>
+
+	</div>
+
+	<div class="ac1">Calcular distancia</div>
+	<div class="dat1">
+		Termino cualquiera (an): 15
+		<br>
+		Termino inicial (a1): 3
+		<br>
+		Posicion (n): 5
+		<br>
+		Distancia (d): ¿?
+
+	</div>
+
+     <form>
+	     <input type="number" id="r1" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res"></div>
+<div class="enviar" onclick="a1()">Enviar</div>
+
+    <script>
+    	function a1()
+    	{
+    		r1=parseInt(r1.value)
+    		if (r1==3)
+    		 {
+    		 	res.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+
+ </div>   
+
+
+ 
+<div class="sa" id="sal">
+	<div class="ssa">Recuerda la ecuación:</div>
+	<div class="ecua">an=a1+(n-1)*d
+		<br>
+		<br>
+<div class="ac2">Calcular término cualquiera</div>
+	<div class="dat2">
+		Termino inicial (a1): 6
+		<br>
+		Posicion (n): 7
+		<br>
+		Distancia (d): 3
+		<br>
+		Termino cualquiera (an): ¿?
+
+	</div>
+
+     <form>
+	     <input type="number" id="r2" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res2"></div>
+<div class="enviar" onclick="a2()">Enviar</div>
+
+    <script>
+
+    	function a2()
+    	{
+    		r2=parseInt(r2.value)
+    		if (r2==24)
+    		 {
+    		 	res2.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res2.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+</div>
+</div>
+
+
+
+
+<div class="ta" id="ter">
+	<div class="tta">Recuerda la ecuación:</div>
+	<div class="ecua">an=a1+(n-1)*d
+		<br>
+		<br>
+<div class="ac3">Calcular posicion del término cualquiera</div>
+	<div class="dat3">
+		Termino inicial (a1): 4
+		<br>
+		Termino cualquiera (an): 28
+		<br>
+		Distancia (d): 4
+		<br>
+		Termino cualquiera (n): ¿?
+
+	</div>
+
+     <form>
+	     <input type="number" id="r3" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res3"></div>
+<div class="enviar" onclick="a3()">Enviar</div>
+
+    <script>
+
+    	function a3()
+    	{
+    		r3=parseInt(r3.value)
+    		if (r3==0)
+    		 {
+    		 	res3.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res3.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+</div>
+</div>
+</div>
+
+
+<div class="ca" id="cal">
+	<div class="cca">Recuerda la ecuación:</div>
+	<div class="ecua">an=a1+(n-1)*d
+		<br>
+		<br>
+<div class="ac4">Calcular termino inicial</div>
+	<div class="dat4">
+		Termino cualquiera (an): 14
+		<br>
+		Posicion (n): 9
+		<br>
+		Distancia (d): 2
+		<br>
+		Termino incial (ai): ¿?
+
+	</div>
+
+     <form>
+	     <input type="number" id="r4" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res4"></div>
+<div class="enviar" onclick="a4()">Enviar</div>
+
+    <script>
+
+    	function a4()
+    	{
+    		r4=parseInt(r4.value)
+    		if (r4==-2)
+    		 {
+    		 	res4.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res4.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+</div>
+</div>
+
+
+
+<div class="b"><a href="progresion.html">TEORIA PROGRESIÓN</a></div>
+<div class="bc"><a href="regresion.html">TEORIA REGRESIÓN</a></div>
+<div class="bd"><a href="index.html">MÓDULO PRÁCTICO</a></div>
+
+
+</body>
+</html>

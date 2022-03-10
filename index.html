@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<style>
+	.t1{
+		position: absolute;
+		font-family: Courier New;
+		background-color: #A2D9CE;
+		top: -18%;
+	}
+	.situa1{
+		position: absolute;
+		   top: 30%;
+		   left: 10%;
+		font-family: Courier New;
+		font-size: 17px;
+		width: 300px;
+		align-items: center;
+		 justify-content: center;
+	}
+
+.t2{
+		position: absolute;
+		font-family: Courier New;
+		background-color: #E8DAEF;
+		top: -18%;
+	}
+	.situa2{
+		position: absolute;
+		   top: 30%;
+		   left: 68%;
+		font-family: Courier New;
+		font-size: 17px;
+		width: 300px;
+		align-items: center;
+		 justify-content: center;
+	}
+
+
+.t3{
+		position: absolute;
+		font-family: Courier New;
+		background-color: #AED6F1;
+		top: -18%;
+	}
+	.situa3{
+		position: absolute;
+		   top: 70%;
+		   left: 10%;
+		font-family: Courier New;
+		font-size: 17px;
+		width: 300px;
+		align-items: center;
+		 justify-content: center;
+	}
+
+.t4{
+		position: absolute;
+		font-family: Courier New;
+		background-color: #F5B7B1;
+		top: -18%;
+	}
+	.situa4{
+		position: absolute;
+		   top: 70%;
+		   left: 68%;
+		font-family: Courier New;
+		font-size: 17px;
+		width: 300px;
+		align-items: center;
+		 justify-content: center;
+	}
+
+		.tit{
+			position: absolute;
+			font-size: 45px;
+			top: 5%;
+			left: 35%;
+			font-family: Courier New;
+		}
+		
+				.b{
+		position: absolute;
+		top: 89%;
+		left: 32%;
+		width: 9%;
+		height: 8%;
+		background-color: #E5CEFF;
+		font-family: Gungsuh;
+		font-size: 120%;
+		text-align: center;
+		align-items: center;
+		 justify-content: center;
+	}
+		.bb{
+		position: absolute;
+		top: 89%;
+		left: 43%;
+		width: 9%;
+		height: 8%;
+		background-color: #E5CEFF;
+		font-family: Gungsuh;
+		font-size: 120%;
+		text-align: center;
+		align-items: center;
+		 justify-content: center;
+	}
+			.bc{
+		position: absolute;
+		top: 89%;
+		left: 53%;
+		width: 9%;
+		height: 8%;
+		background-color: #E5CEFF;
+		font-family: Gungsuh;
+		font-size: 120%;
+		text-align: center;
+		align-items: center;
+		 justify-content: center;
+	}
+	.ti2{
+			position: absolute;
+			font-size: 28px;
+			top: 12.5%;
+			left: 35.5%;
+			font-family: Courier New;
+		}
+</style>
+
+
+<body background="fondo.jpg">
+
+<div class="tit"> Módulo practico</div>
+<div class="ti2"> PROGRESIÓN Y REGRESIÓN</div>
+
+
+
+
+	<div class="situa1">
+<div class="ecua1" id="e1"> </div>
+<div class="num1" id="su"> </div>
+
+<form>
+	<div class="t1">Situacion 1</div>
+	<div class="">Ingrese 3 números sucesivos</div>
+	<input type="" name="" id="n1">
+	<input type="" name="" id="n2">
+	<input type="" name="" id="n3">
+</form>
+<div class="enviar" onclick="f1()">Enviar</div>
+
+<script>
+	function f1()
+	{
+		a=-5
+		d=0
+		q=0
+		w=0
+
+		a1=parseInt(n1.value)
+		a2=parseInt(n2.value)
+		a3=parseInt(n3.value)
+		d=a2-a1
+		q=d*(-1)
+		if (q<0) 
+		{
+			w=a1+(q)
+		}
+		else
+		{
+			w=a1-(q)
+		}
+		
+		if (d>0) 
+		{
+			e1.innerHTML="an="+w+"+"+d+"n";
+
+		}
+		else
+		{
+			e1.innerHTML="an="+w+d+"n";
+
+		}
+
+		
+		nn=4
+		s=0
+		x=" "
+		while(nn<=6)
+		{
+			if (d>0) 
+			{
+				s=w+d*(nn)
+				x="<div class='hola'>"+x+s+"<br></div>"
+			}
+			else
+			{
+				s=w+(d)*nn
+				x="<div class='hola'>"+x+s+"<br></div>"
+			}
+
+			su.innerHTML=x;
+			nn++
+			
+		}
+
+     }
+		
+</script>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="situa2">
+<div class="ecua2" id="e2"></div>
+<div class="num2" id="suu"> </div>
+
+<form>
+	<div class="t2">Situacion 2</div>
+	<div class="">Ingrese el primer numero</div>
+	<input type="" name="" id="nn1">
+	<div class="">Ingrese la distancia</div>
+	<input type="" name="" id="nnn">
+</form>
+<div class="enviar" onclick="f2()">Enviar</div>
+
+<script>
+	function f2()
+	{
+		
+		nn1=parseInt(nn1.value)
+		nd=parseInt(nnn.value)
+		
+		dd=nd*(-1)
+		if (dd>0) 
+		{
+			r=nn1+(dd)
+		}
+		else
+		{
+			r=nn1+(dd)
+		}
+		
+		if (nd>0) 
+		{
+			e2.innerHTML="an="+r+"+"+nd;
+
+		}
+		else
+		{
+			e2.innerHTML="an="+r+nd;
+
+		}
+
+	    con=4
+		s=0
+		x=" "
+		while(con<=6)
+		{
+			if (nd>0) 
+			{
+				s=r+nd*(con)
+				x="<div class='hola'>"+x+s+"<br></div>"
+			}
+			else
+			{
+				s=r+(nd)*con
+				x="<div class='hola'>"+x+s+"<br></div>"
+			}
+
+			suu.innerHTML=x;
+			con++
+			
+		}
+
+     }
+		
+</script>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="situa3">
+<div class="ecua3" id="e3"></div>
+<div class="num3" id="ss"> </div>
+
+<form>
+	<div class="t3">Situacion 3</div>
+	<div class="">Ingrese el primer numero</div>
+	<input type="" name="" id="a1">
+	<div class="">Ingrese la posicion</div>
+	<input type="" name="" id="p1">
+	<div class="">Ingrese el numero en la posicion</div>
+	<input type="" name="" id="pn">
+</form>
+<div class="enviar" onclick="f3()">Enviar</div>
+
+<script>
+	function f3()
+	{
+		
+		aa1=parseInt(a1.value)
+		pp1=parseInt(p1.value)
+		pnn=parseInt(pn.value)
+
+		m=pp1-1
+		if (aa1>0)
+		 {
+		 	v=pnn-aa1
+		 }
+		else
+		{
+			v=pnn-(aa1)
+		}
+
+		dd=v/m
+
+
+		m=dd*(-1)
+		if (m<0) 
+		{
+			h=aa1-m
+		}
+		else
+		{
+			h=aa1+(m)
+		}
+		
+		if (dd>0) 
+		{
+			e3.innerHTML="an="+h+"+"+dd+"n";
+
+		}
+		else
+		{
+			e3.innerHTML="an="+h+dd+"n";
+
+		}
+
+
+	    co=4
+		s=0
+		x=" "
+		while(co<=6)
+		{
+			if (dd>0) 
+			{
+				s=h+dd*(co)
+				x="<div class='hola'>"+x+s+"<br></div>"
+			}
+			else
+			{
+				s=h+(dd)*co
+				x="<div class='hola'>"+x+s+"<br></div>"
+			}
+
+			ss.innerHTML=x;
+			co++
+			
+		}
+
+     }	
+
+</script>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="situa4">
+<div class="ecua4" id="e4"></div>
+<div class="num4" id="sz"> </div>
+
+<form>
+	<div class="t4">Situacion 4</div>
+	<div class="">Ingrese la distancia</div>
+	<input type="" name="" id="dis">
+	<div class="">Ingrese la posicion</div>
+	<input type="" name="" id="posi">
+	<div class="">Ingrese el numero en la posicion</div>
+	<input type="" name="" id="nup">
+</form>
+<div class="enviar" onclick="f4()">Enviar</div>
+
+<script>
+	
+	function f4()
+	{
+		o=0
+		oi=0
+		s1=0
+		s2=0
+		i=0
+
+		dd=parseInt(dis.value)
+		pos=parseInt(posi.value)
+		np=parseInt(nup.value)
+
+		o=dd*(-1)
+		o1=dd*(pos)
+
+		if (dd<0) 
+		{
+			s1=o1+(o)
+		}
+		else
+		{
+			s1=o1+o
+		}
+
+		if (s1>0)
+		 {
+		 	s2=np-s1
+		 }
+		 else
+		 {
+		 	s2=np+s1
+		 }
+
+		 if (o<0)
+		  {
+		  	i=s2+(o)
+		  }
+		  else
+		  {
+		  	i=s2+o
+		  }
+
+		  if (dd>0)
+		   	{
+			e4.innerHTML="an="+i+"+"+dd+"n";
+
+		}
+		else
+		{
+			e4.innerHTML="an="+i+dd+"n";
+
+		}
+
+
+	    co=4
+		ed=0
+		x=" "
+		while(co<=6)
+		{
+			if (dd>0) 
+			{
+				ee=i+dd*(co)
+				x="<div class='hola'>"+x+ee+"<br></div>"
+			}
+			else
+			{
+				ee=i+(dd)*co
+				x="<div class='hola'>"+x+ee+"<br></div>"
+			}
+
+			sz.innerHTML=x;
+			co++
+			
+		}
+
+
+
+	}
+
+</script>
+</div>
+		
+<div class="b"><a href="progresion.html">TEORÍA PROGRESIÓN</a></div>
+<div class="bb"><a href="regresion.html">TEORÍA REGRESIÓN</a></div>
+
+<div class="bc"><a href="evaluativa.html">MÓDULO EVALUATIVO</a></div>
+
+
+</body>
+</html>
